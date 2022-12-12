@@ -1,0 +1,282 @@
+.header {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: calc(100% - 60%);
+  object-fit: contain;
+  margin-top: -40px;
+}
+
+.logo h5 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212245;
+  margin-top: -40px;
+  margin-bottom: 0;
+}
+
+.menu a {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212245;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #df2020;
+}
+
+.active__menu {
+  color: #df2020 !important;
+}
+
+.cart__icon i,
+.user i,
+.mobile__menu i {
+  font-size: 1.3rem;
+  color: #212245;
+  cursor: pointer;
+}
+
+.cart__icon {
+  position: relative;
+}
+
+.cart__badge {
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  background: #df2020;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile__menu {
+  font-weight: 600;
+  display: none;
+}
+
+.header__shrink {
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 5px 5px 15px -5px #fde4e4;
+  background: #fff;
+  z-index: 9999;
+}
+
+.user_profile{
+    z-index: 9999;
+    position: absolute;
+    line-height: 30px;
+    top: 60%;
+    padding: 5px;
+    align-content: center;
+    flex-direction: column;
+    border : none;
+    cursor:pointer;
+    right :60px;
+    width: 100px;
+    display :none;
+
+}
+.show_userProfile{
+  display : block;
+}
+@media only screen and (max-width: 992px) {
+  .logo img {
+    width: calc(100% - 70%);
+    margin-top : -10px;
+
+   
+  }
+  .logo h5 {
+    margin-top : -30px !important;
+  }
+
+  .logo h5 {
+    font-size: 0.8rem;
+    margin-top: -15px;
+  }
+
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.425);
+    z-index: 99;
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    line-height: 20px;
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+  }
+
+  .mobile__menu {
+    display: block;
+  }
+
+  .cart__icon i,
+  .user i,
+  .mobile__menu i {
+    font-size: 1rem;
+  }
+
+  .show__menu {
+    display: block;
+  }
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.425);
+    z-index: 99;
+    display: none;
+  }
+}
+.profile img{
+  width :35px;
+  height:35px;
+  cursor :pointer;
+  border-radius:50%;
+}
+.profile_actions{
+line-height: 25px;
+position: absolute;
+top: 75px;
+display:none;
+}
+.show_profileActions{
+  display : block;
+}
+.
+.profile_actions .show_profileActions span {
+  cursor :pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  .logo img {
+    margin-top : -30px;
+  }
+
+  .logo h5 {
+    margin-top: -55px;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    line-height: 20px;
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+  }
+
+  .mobile__menu {
+    display: block;
+  }
+
+  .cart__icon i,
+  .user i,
+  .mobile__menu i {
+    font-size: 1rem;
+  }
+
+  .show__menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  .logo img {
+    margin-top : -10px;
+  }
+
+  .logo h5 {
+    margin-top: -45px;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 210px;
+    height: 40%;
+    background: #fff;
+
+    flex-direction: column;
+    z-index: 100;
+  }
+
+  .menu :nth-child a {
+    font-size: 1,2rem;
+    margin-top : 300px;
+  }
+
+  .mobile__menu {
+    display: block;
+  }
+
+  .cart__icon i,
+  .user i,
+  .mobile__menu i {
+    font-size: 1rem;
+  }
+  .show__menu {
+    display: block;
+  }
+
+  
+  
+}
