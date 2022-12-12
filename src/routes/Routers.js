@@ -11,7 +11,7 @@ import Login from '../pages/Login'
 import Register from '../pages/Register'
 const Routers = () => {
   return <Routes>
-    <Route exact path='/' element={<Home/>} />
+    <Route exact path='/Fastdemo' element={<Home/>} />
     <Route path='/foods/:id' element={<FoodDetails/>} />
     <Route path='/foods' element={<AllFoods/>} />
     <Route path='/cart' element={<Cart/>} />
